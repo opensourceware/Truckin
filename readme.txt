@@ -1,4 +1,6 @@
-Strategy:
+This is a single-player prolog agent that plays a monopoly game of Truckin and maximizes its profit.
+
+Game strategy:
 1. Our agent runs looks for the Best Buyer and Best Seller using the find_best_item predicate in masm_agent.prolog. This predicate looks for the item that returns highest profit i.e. the item which gives maximum price difference between the product of price and quantity. We first find the quantity (Optimal_Q) of the item that can be bought, given limited amount of cash available to the agent, and choose the item which has maximum value of:
 
 			PriceDiff = (Cost Price - Selling Price)*Optimal_Q
